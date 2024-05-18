@@ -1,9 +1,5 @@
 # web-development-bootcamp
 
-The Complete 2024 Web Development Bootcamp course from Udemy by Dr. Angela Yu
-
--- HTML
-
 HTML stands for Hypertext Markup Language
 
 h1 to h6 (Heading Elements)
