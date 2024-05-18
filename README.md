@@ -46,3 +46,5 @@ means important info about website that is not going to be displayed to the user
 <body>  </body> All content of website is included here.
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" /> means how the website should be displayed relative to the screen.
+
+Capstone Projects: It's a hands-on project where you build a complete website or app from scratch, using various web development skills like coding, designing, and testing.
