@@ -38,3 +38,47 @@ Font Properties are:
 
 border: thickness style color
 width: top right bottom left
+
+Cascade: First it sees external CSS then internal CSS then inline CSS.
+
+1. Position: The lower down the file, the rule is more important.
+2. Specificity: Element selector is least specific. Next level is class selector. Next is attribute selector. Most specific is ID selector.
+3. Type: External, Internal and Inline in order. The inline has more importance, then internal and then external.
+4. Importance: !important keyword.
+
+
+Combining selectors:
+
+1. Group - Apply to both selectors
+selector, selector {
+    property, value;
+}
+
+2. Child - Apply to direct child of left side
+parent > child {
+    property, value;
+}
+
+3. Descendant - Apply to a descendant on left side
+selector selector {
+    property, value;
+}
+
+4. Chaining - Apply where all selectors are true
+selectorselector {
+    property, value;
+}
+
+5. Combining combiners
+selector selectorselector {
+    property, value;
+}
+
+
+Positions:
+1. Static
+2. Relative
+3. Absolute
+4. Fixed
+
+Z-index - default 0 on every component
