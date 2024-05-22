@@ -84,7 +84,7 @@ Positions:
 Z-index - default 0 on every component
 
 
-Dipslay:
+Display:
 1. Inline
 2. BLock
 3. Inline Block
