@@ -24,7 +24,7 @@ property: value
 
 attribute is true or false. It can be set in HTML as well as CSS.
 
-- is a universal selector.
+* is a universal selector.
 
 1px = 1/96 inch
 1pt = 1/72 inch
@@ -82,3 +82,38 @@ Positions:
 4. Fixed
 
 Z-index - default 0 on every component
+
+
+Dipslay:
+1. Inline
+2. BLock
+3. Inline Block
+
+
+Floats:
+1. Left
+2. Right
+
+Clear: to make it free from float.
+
+
+Responsivesness:
+1. Media Queries
+@media (max or min-width: width) {
+    selector {
+        peoperty: value;
+    }
+}
+@media (max or min-width: width) and (max or min-width: width) {
+    selector {
+        peoperty: value;
+    }
+}
+@media screen (orientation: landscape) {
+    selector {
+        peoperty: value;
+    }
+}
+2. CSS Grid
+3. CSS Flexbox
+4. External Frameworks e.g. Bootstrap
