@@ -45,3 +45,42 @@ Rules for defining variable:
 4. Variable names cannot have spaces.
 5. Variable names can only contain letters, numbers, dollar sign and underscore. No other symbols.
 6. Use camelcase. e.g. myName
+
+
+a+b (String Concatenation)
+string.length to find number of characters in a string.
+
+string.slice is used to extract some part of the string.
+string.slice(start position, end position) e.g. name.slice(0,3)
+
+string.toUpperCase() - to make string uppercase.
+string.toLowerCase() - to make string lowercase.
+To capitalize first letter only:
+1. Slice first letter and make it uppercase.
+2. Slice rest string and make it lowercase.
+3. Concatenate both.
+
+
+Arithmatic Operations:
+1. Add (+)
+2. Subtract (-)
+3. Multiply (*)
+4. Divide (/)
+5. Modulo (%) - Gives remainder of division.
+
+Precedence: Multiply and divide first before add and subtract. Parentheses will be evaluated first if they exist.
+
+
+x++ (x = x + 1) or (x += 1) - Increment
+x-- (x = x - 1) or (x -= 1) - Decrement
+
+
+Functions are used when you want to repeat a series of instructions, you put in inside a function and call it whenever you need.
+
+Declaring a Function:
+function funcName() {
+  code
+}
+
+Calling a function:
+funcName();
