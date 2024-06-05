@@ -84,3 +84,28 @@ function funcName() {
 
 Calling a function:
 funcName();
+
+
+Function with parameters:
+function funcName(parameter) {
+  code
+}
+
+funcName(argument);
+
+
+Function with outputs and return values:
+function funcName(parameter) {
+  code
+  return something
+}
+
+var varName = funcName(argument);
+
+Math.ceil(value)
+Math.floor(value)
+Math.round(value)
+Math.pow(base, exponent)
+Math.random()
+Random number is always between 0 an 0.9 to 16 decimal places.
+If we want to generate a certain range, we multiply random number by that number. e.g. Math.random() * 6 gives random numbers between 0-5.9 to 16 decimal places. If we want to include 6 too, we can floor the number after multiplying and add 1.

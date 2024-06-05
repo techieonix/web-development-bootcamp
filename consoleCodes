@@ -1,62 +1,63 @@
-alert("Hello");   //Shows alert as a popup
-prompt("what is your name?");   //Takes user input
+alert("Hello"); //Shows alert as a popup
+prompt("what is your name?"); //Takes user input
 var myName = "Fahi";
 myName = "Faheela";
 alert(myName);
 var yourName = prompt("what is your name?");
 alert("My name is " + myName + " Welcome " + yourName + "!");
 
-
 //To replace a and b values/
 function test() {
-    var a = "3";
-    var b = "8";
-    
-// /***********Do not change the code above 👆*******/
-// //Write your code on lines 7 - 9:
-var c = a;
-a = b;
-b = c;
-    
-// /***********Do not change the code below 👇*******/
+  var a = "3";
+  var b = "8";
 
-    console.log("a is " + a);
-    console.log("b is " + b);
+  // /***********Do not change the code above 👆*******/
+  // //Write your code on lines 7 - 9:
+  var c = a;
+  a = b;
+  b = c;
+
+  // /***********Do not change the code below 👇*******/
+
+  console.log("a is " + a);
+  console.log("b is " + b);
 }
 
 alert("Hello" + " " + "World");
 
 var message = "Hello";
 var name = prompt("Enter your name");
-alert(message + " " + name);   //String Concatenation
+alert(message + " " + name); //String Concatenation
 
 var name = "Faheela";
-name.length;   //Number of characters in a string
+name.length; //Number of characters in a string
 
 var limit = 280;
 var text = prompt("Enter text");
 var count = text.length;
-alert("You have written " + count + " words and " + (limit-count) + " words left.")
+alert(
+  "You have written " + count + " words and " + (limit - count) + " words left."
+);
 
 var name = "Faheela";
-name.slice(0,1);
-name.slice(5,6);
-name.slice(0,3);
+name.slice(0, 1);
+name.slice(5, 6);
+name.slice(0, 3);
 
 var text = prompt("Enter text");
-var text140 = text.slice(0,140);
+var text140 = text.slice(0, 140);
 alert(text140);
 
-alert(prompt("Enter text: ").slice(0,140));  //3 lines into 1 line
+alert(prompt("Enter text: ").slice(0, 140)); //3 lines into 1 line
 
 var name = "Faheela";
 name.toUpperCase();
 name.toLowerCase();
 
 var name = prompt("Enter your name");
-var char1 = name.slice(0,1); //Take 1st letter
+var char1 = name.slice(0, 1); //Take 1st letter
 var char1Upper = char1.toUpperCase(); //Capitalize first letter
-var restName = name.slice(1,name.length); //Take rest of name
+var restName = name.slice(1, name.length); //Take rest of name
 var restNameLower = restName.toLowerCase(); //Make rest of name lower case
 var capName = char1Upper + restNameLower; //Concatenate capitalized first letter and rest of name.
 alert("Hello " + capName);
@@ -65,23 +66,200 @@ var dogAge = prompt("Enter dog age:");
 var humanAge = (dogAge - 2) * 4 + 21;
 alert(humanAge);
 
-function getMilk() {   
-    console.log("leaveHouse");
-    console.log("moveRight");
-    console.log("moveRight");
-    console.log("moveUp");
-    console.log("moveUp");
-    console.log("moveUp");
-    console.log("moveUp");
-    console.log("moveRight");
-    console.log("moveRight");
-    console.log("moveLeft");
-    console.log("moveLeft");
-    console.log("moveDown");
-    console.log("moveDown");
-    console.log("moveDown");
-    console.log("moveDown");
-    console.log("moveLeft");
-    console.log("moveLeft");
-    console.log("enterHouse");
-  }
+//  Function
+function getMilk() {
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+}
+
+//Function with parameter and argument
+function getMilk(cost) {
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("buy " + Math.floor(cost / 1.5) + " bottles of milk.");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+}
+
+getMilk(5);
+
+// Life in Weeks
+function lifeInWeeks(age) {
+  /************Don't change the code above************/
+
+  //Write your code here.
+  var yearsRemaining = 90 - age;
+  var days = yearsRemaining * 365;
+  var weeks = yearsRemaining * 52;
+  var months = yearsRemaining * 12;
+  console.log(
+    "You have " +
+      days +
+      " days, " +
+      weeks +
+      " weeks, and " +
+      months +
+      " months left."
+  );
+
+  /*************Don't change the code below**********/
+}
+
+lifeInWeeks(25);
+
+//Function with output and return values
+function getMilk(cost) {
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("buy " + Math.floor(cost / 1.5) + " bottles of milk.");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+  return cost % 1.5;
+}
+
+var change = getMilk(5);
+console.log(change);
+
+function getMilk(cost) {
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("buy " + calcBottles(cost, 1.5) + " bottles of milk.");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+  return calcChange(cost, 1.5);
+}
+
+function calcBottles(startingMoney, costPerBottle) {
+  var bottles = Math.floor(startingMoney / costPerBottle);
+  return bottles;
+}
+
+function calcChange(startingAmount, costPerBottle) {
+  var change = startingAmount % costPerBottle;
+  return change;
+}
+console.log("Hello master, here is your " + getMilk(5) + " change.");
+
+function getMilk(cost, costPerBottle) {
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("buy " + calcBottles(cost, costPerBottle) + " bottles of milk.");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+  return calcChange(cost, 1.5);
+}
+
+function calcBottles(startingMoney, costPerBottle) {
+  var bottles = Math.floor(startingMoney / costPerBottle);
+  return bottles;
+}
+
+function calcChange(startingAmount, costPerBottle) {
+  var change = startingAmount % costPerBottle;
+  return change;
+}
+console.log("Hello master, here is your " + getMilk(10, 3) + " change.");
+
+//BMI Calculator
+//Create your function below this line.
+//The first parameter should be the weight and the second should be the height.
+function bmiCalculator(weight, height) {
+  var bmi = weight / Math.pow(height, 2);
+  return Math.round(bmi);
+}
+
+var bmi = bmiCalculator(65, 1.8);
+console.log(bmi);
+
+/* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
+
+var bmi = bmiCalculator(65, 1.8); 
+
+bmi should equal 20 when it's rounded to the nearest whole number.
+
+*/
+
+//Generate a Random Number
+var n = Math.random();
+n = n * 6;
+n = Math.floor(n) + 1;
+console.log(n);
+
+//Love Calculator
+prompt("Enter your name");
+prompt("Enter your crush's name");
+score = Math.random() * 100;
+score = Math.floor(score) + 1;
+alert("Your love score is " + score + "%")
