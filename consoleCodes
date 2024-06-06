@@ -262,4 +262,51 @@ prompt("Enter your name");
 prompt("Enter your crush's name");
 score = Math.random() * 100;
 score = Math.floor(score) + 1;
-alert("Your love score is " + score + "%")
+alert("Your love score is " + score + "%");
+
+//BMI Calculator using conditionals
+function bmiCalculator(weight, height) {
+  var bmi = weight / Math.pow(height, 2);
+  if (bmi < 18.5) {
+    return underweight(bmi);
+  }
+  if (bmi >= 18.5 && bmi <= 24.9) {
+    return normalweight(bmi);
+  }
+  if (bmi > 24.9) {
+    return overweight(bmi);
+  }
+}
+
+function underweight(bmi) {
+  console.log("Your BMI is " + bmi + ", so you are underweight.");
+}
+function normalweight(bmi) {
+  console.log("Your BMI is " + bmi + ", so you have a normal weight.");
+}
+function overweight(bmi) {
+  console.log("Your BMI is " + bmi + ", so you are overweight.");
+}
+var bmi = bmiCalculator(48.6, 1.8);
+
+//Leap year
+function isLeap(year) {
+  /**************Don't change the code above****************/
+
+  //Write your code here.
+  if (year % 4 === 0) {
+    if (year % 100 === 0) {
+      if (year % 400 === 0) {
+        return "Leap year.";
+      }
+    } else {
+      return "Leap year.";
+    }
+    return "Leap year.";
+  } else {
+    return "Not leap year.";
+  }
+
+  /**************Don't change the code below****************/
+}
+isLeap(2024);

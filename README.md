@@ -109,3 +109,28 @@ Math.pow(base, exponent)
 Math.random()
 Random number is always between 0 an 0.9 to 16 decimal places.
 If we want to generate a certain range, we multiply random number by that number. e.g. Math.random() * 6 gives random numbers between 0-5.9 to 16 decimal places. If we want to include 6 too, we can floor the number after multiplying and add 1.
+
+
+Control Flow: If Else Conditions:
+if (condition) {
+  code
+} else if (condition) {
+  code
+} else {
+  code
+}
+
+=== means left hand side is equal to right hand side.
+!== means left hand side is not equal to right hand side.
+> means is greater than.
+< means is lesser than.
+>= means is greater or equal to.
+<= means is lesser or equal to.
+
+=== and == both check for equality. The difference is that === also check for data type too, which means 1 is equal to "1". While == does not care about data type.
+
+
+Comparators:
+&& (AND)
+|| (OR)
+!(NOT)
