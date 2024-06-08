@@ -310,3 +310,81 @@ function isLeap(year) {
   /**************Don't change the code below****************/
 }
 isLeap(2024);
+
+var guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+console.log(guestList);
+guestList.length;
+guestList[0];
+
+var guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+var guestName = prompt("Enter your name");
+if (guestList.includes(guestName)) {
+  alert("Welcome");
+} else {
+  alert("Sorry, maybe next time!");
+}
+
+//FizzBuzz
+var output = [];
+var count = 1;
+function fizzBuzz() {
+  if (count % 3 === 0 && count % 5 === 0) {
+    output.push("FizzBuzz");
+  } else if (count % 3 === 0) {
+    output.push("Fizz");
+  } else if (count % 5 === 0) {
+    output.push("Buzz");
+  } else {
+    output.push(count);
+  }
+  count++;
+  console.log(output);
+}
+
+//Who's buying lunch
+function whosPaying(names) {
+  /******Don't change the code above*******/
+
+  //Write your code here.
+  var numberOfPeople = names.length;
+  var randomNumberPosition = Math.floor(Math.random() * numberOfPeople);
+  var randomPerson = names[randomNumberPosition];
+  return randomPerson + " is going to buy lunch today!";
+
+  /******Don't change the code below*******/
+}
+
+//Fizzbuzz using while loop
+var output = [];
+var count = 1;
+function fizzBuzz() {
+  while (count <= 100) {
+    if (count % 3 === 0 && count % 5 === 0) {
+      output.push("FizzBuzz");
+    } else if (count % 3 === 0) {
+      output.push("Fizz");
+    } else if (count % 5 === 0) {
+      output.push("Buzz");
+    } else {
+      output.push(count);
+    }
+    count++;
+  }
+  console.log(output);
+}
+
+//99 bottles of beer
+var numberOfBottles = 99;
+while (numberOfBottles >= 0) {
+  var bottleWord = "bottles";
+  if (numberOfBottles === 1) {
+    bottleWord = "bottle";
+  } else if (numberOfBottles === 0) {
+    numberOfBottles = "No more";
+  }
+  console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+  console.log(numberOfBottles + " " + bottleWord + " of beer,");
+  console.log("Take one down, pass it around,");
+  numberOfBottles--;
+  console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+}

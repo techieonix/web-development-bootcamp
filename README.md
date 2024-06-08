@@ -134,3 +134,19 @@ Comparators:
 && (AND)
 || (OR)
 !(NOT)
+
+
+Arrays:
+var arrayName = [element1, element2, ...]
+                    [0]      [1]     ...
+
+array.length gives the number of elements in an array.
+array.includes(elementName) checks if the particular element exists in that array.
+array.push(value) adds the value to the array.
+array.pop deletes the last element from the array.
+
+
+While Loops:
+while (something is true) {
+  code
+}
