@@ -150,3 +150,46 @@ While Loops:
 while (something is true) {
   code
 }
+
+
+For Loops:
+for(i=starting value; i<=ending value; change in i) {
+  code
+}
+
+We use while loop when we want to repeat instructions until the program is in a certain state. When we want iterations in program, we use for loop.
+
+
+Document Object Model (DOM)
+onload - When the website page gets loaded.
+
+Inline Javascript: Inside the tag in which we want the action to perform.
+Internal Javascript: Inside the script tag.
+External Javascript: Importing and external JS file using script src.
+
+script tag is always placed right before the body tag is closed.
+
+document: Whole content of website.
+document.firstElementChild: First Child in Contents.
+document.firstElementChild.firstElementChild: First child's first child.
+document.firstElementChild.lastElementChild: First child's last child.
+document.firstElementChild.lastElementChild.firstElementChild: First child's last child's first child.
+We can assign them to a variable too. e.g. var heading = document.firstElementChild.lastElementChild.firstElementChild
+
+tag.innerHTML refers to the text inside that tag.
+tag.style.property = value refers to the CSS style of that tag.
+object.property - Getting a Property
+object.property = value - Setting a Property
+
+object.methodName() - Makes the object do something.
+
+Method is something that an object can do. It has to be associated with the object.
+
+document.getElementByTagName(tagName) searches for that tag name.
+document.getElementsByClassName(className) searches for elements with that class name.
+document.getElementById(idName) searches for elements with that id name.
+document.querySelector(name) - in this we can write tag, class and id as well.
+
+We use spaces with hierarchical selectors. e.g. document.querySelector("#list a")
+If we have more than one selectors, it uses only the first one. e.g. document.querySelector("#list .item"). If we have more than one selector with class item then it will select only first selector with that class.
+If we want to select all selectors, we will use document.querySelectorAll("#list .item")
