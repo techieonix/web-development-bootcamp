@@ -210,3 +210,13 @@ Everything inside a tag, other than tag name itself. is attribute. e.g. class fo
 document.querySelector(tagName).attributes gives all the attributes of that tag.
 document.querySelector(tagName).getAttribute(attributeName) gives the information of that attribute.
 document.querySelector(tagName).setAttribute(attributeName, what we want to change it to)
+
+addEventListener sets up a function to be called whenever the specified element is delivered to the target.
+target.addEventListener(type, listener[, options]);
+e.g. document.querySelector("button").addEventListener("click", handleClick);
+If we use parantheses with the function name e.g. handleClick, it will perform the function action straight away when we reload the website.
+
+We can also use anonymous function like:
+document.querySelector(tagName).addEventListener("click", function(){
+    code
+});
