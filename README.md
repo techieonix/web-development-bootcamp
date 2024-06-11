@@ -193,3 +193,20 @@ document.querySelector(name) - in this we can write tag, class and id as well.
 We use spaces with hierarchical selectors. e.g. document.querySelector("#list a")
 If we have more than one selectors, it uses only the first one. e.g. document.querySelector("#list .item"). If we have more than one selector with class item then it will select only first selector with that class.
 If we want to select all selectors, we will use document.querySelectorAll("#list .item")
+
+
+HTML- Content
+CSS - Style
+Javascript - Behaviour
+
+document.querySelector(tagName).classList gives a list of classes that are attached to that tag.
+document.querySelector(tagName).classList.add("className") adds a new class to class list. We can use this class in style.css.
+document.querySelector(tagName).classList.remove("className") removes the class from class list.
+document.querySelector(tagName).classList.toggle("className") means that if the class is already applied then remove it, else apply it.
+The difference between innerHTML and textContent is that innerHTML gives everything that is inside that tag even if we use other tags inside it. textContent only gives HTML content without any inside used tags. If we want to change innerHTML we can also add tags inside it.
+
+Everything inside a tag, other than tag name itself. is attribute. e.g. class for any tag, href for anchor tag, src for image tag.
+
+document.querySelector(tagName).attributes gives all the attributes of that tag.
+document.querySelector(tagName).getAttribute(attributeName) gives the information of that attribute.
+document.querySelector(tagName).setAttribute(attributeName, what we want to change it to)
