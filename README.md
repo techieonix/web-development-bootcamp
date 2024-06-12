@@ -214,9 +214,53 @@ document.querySelector(tagName).setAttribute(attributeName, what we want to chan
 addEventListener sets up a function to be called whenever the specified element is delivered to the target.
 target.addEventListener(type, listener[, options]);
 e.g. document.querySelector("button").addEventListener("click", handleClick);
+The first input defines what it should listen to, and the second input defines what it should do once that event gets detected.
 If we use parantheses with the function name e.g. handleClick, it will perform the function action straight away when we reload the website.
 
 We can also use anonymous function like:
-document.querySelector(tagName).addEventListener("click", function(){
+document.querySelector(tagName).addEventListener("click", function() {
     code
 });
+
+Debugger is used to find errors in the code. It debugs the whole code to see what is happening at each step.
+
+Higher Order Functions are those that can take other functions as inputs.
+
+Play Audio on Website:
+var audio = new Audio('audio_file.mp3');
+audio.play();
+In this, we make a new object of Audio in which we have audio file URL, and we store it in a variable.
+It creates and HTMLAudioElement <audio>.
+
+this keyword is an identity of the button that triggers an event listener.
+
+Define an object:
+var objectName = {
+  propertyName1: valueName1,
+  propertyName2: valueName2,
+  propertyName3: valueName3
+}
+To access a property of the object, we write object.propertyName.
+
+Constructor Function:
+Its name is capitalized. Inside the function we match the inputs to property names.
+function FunctionName(input1, input2, input3, ...) {
+  this.property1 = property1;
+  this.property2 = property2;
+  this.property3 = property3;
+}
+var varName = new ConstructorFunctionName(propertyValue1, propertyValue2, propertyValue3, ...)
+
+The difference between method and property is paranthesis.
+
+Callback Function:
+document.addEventListener("type", functionName(event));
+function functionName(event) {
+  code
+}
+
+Timeout Function:
+setTimeOut(function, milliseconds, param1, param2)
+function is the function that will be executed.
+milliseconds is the number of ms to wait before executing the code.
+param1 and param2 are optional. They are additional parameters to pass to the function.

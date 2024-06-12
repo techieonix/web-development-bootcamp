@@ -430,16 +430,18 @@ function fibonacciGenerator(n) {
   //Do NOT change any of the code below 👇
 }
 
-document.firstElementChild
-document.firstElementChild.firstElementChild
-document.lastElementChild
-document.firstElementChild.lastElementChild
-document.firstElementChild.lastElementChild.firstElementChild
-var heading = document.firstElementChild.lastElementChild.firstElementChild
+document.firstElementChild;
+document.firstElementChild.firstElementChild;
+document.lastElementChild;
+document.firstElementChild.lastElementChild;
+document.firstElementChild.lastElementChild.firstElementChild;
+var heading = document.firstElementChild.lastElementChild.firstElementChild;
 heading.innerHTML = "Good Bye";
-heading.style.color = 'red';
+heading.style.color = "red";
 document.querySelector("input").click();
-document.firstElementChild.lastElementChild.querySelector("ul").lastElementChild.innerHTML = "abc";
+document.firstElementChild.lastElementChild.querySelector(
+  "ul"
+).lastElementChild.innerHTML = "abc";
 document.getElementsByTagName("li");
 document.getElementsByTagName("li")[2].style.color = "purple";
 document.getElementsByTagName("li").length;
@@ -468,3 +470,31 @@ document.getElementById("title").innerHTML = "<em>Good Bye</em>";
 document.querySelector("a").attributes;
 document.querySelector("a").getAttribute("href");
 document.querySelector("a").setAttribute("href", "www.bing.com");
+
+//Calculator
+function add(num1, num2) {
+  return num1 + num2;
+}
+function subtract(num1, num2) {
+  return num1 - num2;
+}
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+function divide(num1, num2) {
+  return num1 / num2;
+}
+function calculator(num1, num2, operator) {
+  //Higher Order Function
+  return operator(num1, num2);
+}
+
+//Constructor Function
+function HouseKeeper(name, yearsOfExperience, cleaningWork) {
+  this.name = name;
+  this.yearsOfExperience = yearsOfExperience;
+  this.cleaningWork = cleaningWork;
+  this.clean = function() {
+    alert("Cleaning in progress...");
+  }
+}
