@@ -129,3 +129,5 @@ function middlewareName(req, res, next) {
     next();
 }
 app.use(middlewareName);
+
+res.redirect(path) redirects to that path.
