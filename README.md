@@ -41,7 +41,7 @@ Transfer protocol is a language that allows computers to talk to each other acro
 
 The purpose of HTTP is for client computers to connect with server side.
 
-HTTP Request Vocabulary:
+HTTP Request Vocabulary (Route Handlers):
 1. GET - When you want to request a resource from the server like HTML website or data from database.
 2. POST - Sending resource to the server like sending email and password to signup.
 3. PUT - When you want to replace a resource and update a reource completely.
@@ -88,3 +88,44 @@ https://web.postman.co/
 
 res.send - sends a response.
 res.sendStatus - sends the status code.
+
+Middleware is something that is between the raw requests that come in. When a request comes to the server, before it gets processed by the route handlers and reach their final destinations, middleware works with these requests.
+1. It can pre-process the request.
+2. Logging the request.
+3. Authentication.
+4. Process errors in requests.
+
+A middleware example in node and express in backend is Body Parser.
+Body Parser is a pre-processing body parsing middleware. It can look at the request bodies before handlers can access them. This gives request a new property called body property. Mainly it is used to handle form data.
+
+We use app.use() method to specify a middleware to use when the request comes in. Inside there, we can pass in a function that has a request, a response object and a next() method.
+
+app.use((reg, res, next) => {
+    console.log("Request Method: ", req.method);
+    next();
+});
+
+The next() function determines when we should move on from the middleware and continue in the flow of the server handlers.
+
+app.use(bodyParser.urlencoded({extended: true}));
+
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
+res.sendFile sends a file that requires file path.
+
+Another type of middleware is morgan. Morgan is a logging middleware.
+Morgan has a number of options to determine how detailed you want the logging to be.
+
+app.use(morgan("combined"));
+
+To make our custom middleware:
+function middlewareName(req, res, next) {
+    code
+    next();
+}
+app.use(middlewareName);
