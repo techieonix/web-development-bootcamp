@@ -27,3 +27,20 @@ EJS Tags:
 
 locals.varName is a way to access all variables that get sent over with res.render.
 res.locals = {data: value}
+
+If we add stylesheets in head sections of ejs file, it won't work. Because these files are static files.
+For static files in node based backend, we create a folder named public and put all static files in that.
+Public folder is on top of the project.
+
+To tell express where our static files are located, we use the middleware
+app.use(express.static("public"));
+
+Once we tell express where public folder is, it will treat everything inside as a static file.
+
+When we create stylesheet links, the href will be relative to the location of public folder.
+public/styles/layout.css
+
+The way file path works in node and express for dynamic files is different from static files.
+
+Partials is when we add a repetitive part of code by writing it in a separate file and using EJS tag
+<%- include("<FIELNAME>") %> 
